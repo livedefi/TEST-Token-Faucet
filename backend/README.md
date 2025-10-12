@@ -45,8 +45,20 @@ Compile contracts:
 - npx hardhat compile
 
 ## Test
-Run the test suite:
-- npx hardhat test
+Run tests on the local in-memory Hardhat network. Examples:
+- Run all tests:
+  - npx hardhat test
+- Run a specific file:
+  - npx hardhat test test/TokenFaucet.test.ts
+- Filter tests by name/pattern:
+  - npx hardhat test --grep "TokenFaucet"
+- Clean and recompile before running:
+  - npx hardhat clean && npx hardhat compile && npx hardhat test
+
+Notes:
+- Tests are designed for the local Hardhat network; avoid using --network sepolia.
+- TypeScript tests are supported via @nomicfoundation/hardhat-toolbox-mocha-ethers.
+
 
 ## Deploy (Ignition)
 Ignition modules define deployment recipes. A FaucetModule is provided to deploy SimpleToken and TokenFaucet together.
