@@ -24,9 +24,16 @@ This backend contains the Solidity smart contracts and tooling to develop, test,
 ## Environment variables (.env)
 Create a .env file in the backend directory with the following variables:
 
+```ini
+# Sepolia RPC (Infura/Alchemy/Ankr, etc.)
 SEPOLIA_RPC_URL=https://sepolia.example-rpc-provider.com/v3/YOUR_KEY
+
+# Private key for the deployer account (use a low-balance, dedicated key)
 SEPOLIA_PRIVATE_KEY=0xYOUR_PRIVATE_KEY
+
+# Etherscan API key for contract verification
 ETHERSCAN_API_KEY=YOUR_ETHERSCAN_API_KEY
+```
 
 Notes:
 - Do not wrap values in quotes.
