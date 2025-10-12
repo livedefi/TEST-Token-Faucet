@@ -70,10 +70,14 @@ Note: These addresses correspond to the Sepolia deployment performed via Ignitio
 Ensure ETHERSCAN_API_KEY is set in .env. Then verify each contract with the constructor arguments used at deployment.
 
 SimpleToken (example values used by the module):
-- npx hardhat verify --network sepolia <SimpleTokenAddress> "Test Token" "TEST" 10000000000000000000000 100000000000000000000000
+```bash
+npx hardhat verify --network sepolia <SimpleTokenAddress> "Test Token" "TEST" 10000000000000000000000 100000000000000000000000
+```
 
 TokenFaucet (example values used by the module):
-- npx hardhat verify --network sepolia <TokenFaucetAddress> <SimpleTokenAddress> 10000000000000000000 3600 100000000000000000000 1000000000000000000000
+```bash
+npx hardhat verify --network sepolia <TokenFaucetAddress> <SimpleTokenAddress> 10000000000000000000 3600 100000000000000000000 1000000000000000000000
+```
 
 Argument mapping:
 - SimpleToken(name, symbol, initialSupply, cap) — amounts in wei (18 decimals)
