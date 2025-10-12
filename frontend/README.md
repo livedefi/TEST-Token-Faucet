@@ -2,6 +2,10 @@
 
 A modern frontend to interact with an ERC‑20 faucet on the Sepolia network. It lets users connect their wallet, view faucet status and limits, check balances, request tokens, and add the token directly to MetaMask.
 
+## Live site
+
+- https://test-token-faucet.casaislabs.com/
+
 ## Key features
 
 - Wallet connection with RainbowKit and Wagmi (WalletConnect v2).
