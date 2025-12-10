@@ -27,8 +27,6 @@ Quick start
   - Backend: compile, test, and deploy — see [Backend README](./backend/README.md)
   - Frontend: run dev server — see [Frontend README](./frontend/README.md)
 
-Live site
-- https://test-token-faucet.casaislabs.com/
 
 Notes
 - Keep secrets out of version control; never commit `.env` files.
