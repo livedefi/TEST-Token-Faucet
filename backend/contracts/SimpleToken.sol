@@ -16,6 +16,7 @@ import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
  * - Ownable for administrative functions
  * - ReentrancyGuard for security
  * - Supply cap to prevent unlimited minting
+ * - Stops reentrancy attack with ReentrancyGuard
  */
 contract SimpleToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ReentrancyGuard {
     uint256 public immutable cap;
